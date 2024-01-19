@@ -1,6 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
+import configReducer from "./configSlice";
 
 const appStore = configureStore({
-    reducer:{},
+    reducer:{
+        config: configReducer
+    },
 });
 export default appStore;
